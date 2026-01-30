@@ -12,7 +12,7 @@ const imageSeq = {
 
 /* Image path function */
 const currentFrame = index =>
-  `images/ezgif-48bae485a9fc49bf-jpg/ezgif-frame-${String(index + 1).padStart(3, '0')}.jpg`;
+  `images/ezgif-frame-${String(index + 1).padStart(3, '0')}.jpg`;
 
 /* Preload images */
 for (let i = 0; i < frameCount; i++) {
@@ -52,3 +52,4 @@ window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 });
+
